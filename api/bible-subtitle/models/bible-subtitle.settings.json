@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bible_subtitles",
+  "info": {
+    "name": "Bible subtitle",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "bible_verse": {
+      "via": "bible_subtitle",
+      "model": "bible-verse"
+    }
+  }
+}

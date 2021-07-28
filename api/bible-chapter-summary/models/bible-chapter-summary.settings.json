@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bible_chapter_summaries",
+  "info": {
+    "name": "Bible chapter summary",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "bible_book": {
+      "via": "bible_chapter_summary",
+      "model": "bible-book"
+    },
+    "chapter": {
+      "type": "integer",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

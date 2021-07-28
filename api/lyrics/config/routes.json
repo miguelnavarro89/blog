@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lyrics",
+      "handler": "lyrics.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lyrics/count",
+      "handler": "lyrics.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lyrics/:id",
+      "handler": "lyrics.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lyrics",
+      "handler": "lyrics.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lyrics/:id",
+      "handler": "lyrics.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lyrics/:id",
+      "handler": "lyrics.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

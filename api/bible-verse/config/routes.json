@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bible-verses",
+      "handler": "bible-verse.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bible-verses/count",
+      "handler": "bible-verse.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bible-verses/:id",
+      "handler": "bible-verse.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bible-verses",
+      "handler": "bible-verse.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bible-verses/:id",
+      "handler": "bible-verse.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bible-verses/:id",
+      "handler": "bible-verse.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

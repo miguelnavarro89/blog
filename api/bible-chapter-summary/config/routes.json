@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bible-chapter-summaries",
+      "handler": "bible-chapter-summary.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bible-chapter-summaries/count",
+      "handler": "bible-chapter-summary.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bible-chapter-summaries/:id",
+      "handler": "bible-chapter-summary.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bible-chapter-summaries",
+      "handler": "bible-chapter-summary.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bible-chapter-summaries/:id",
+      "handler": "bible-chapter-summary.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bible-chapter-summaries/:id",
+      "handler": "bible-chapter-summary.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

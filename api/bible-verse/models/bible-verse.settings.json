@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bible_verses",
+  "info": {
+    "name": "Bible verse",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "chapter": {
+      "type": "integer",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "verse": {
+      "type": "integer",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "bible_subtitle": {
+      "via": "bible_verse",
+      "model": "bible-subtitle"
+    },
+    "notes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "notes.note",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "cross_references": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cross-references.cross-reference",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "bible_book": {
+      "model": "bible-book"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "music_albums",
+  "info": {
+    "name": "Music albums",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "music_artist": {
+      "model": "artist",
+      "via": "music_albums"
+    }
+  }
+}

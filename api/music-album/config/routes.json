@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/music-albums",
+      "handler": "music-album.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/music-albums/count",
+      "handler": "music-album.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/music-albums/:id",
+      "handler": "music-album.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/music-albums",
+      "handler": "music-album.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/music-albums/:id",
+      "handler": "music-album.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/music-albums/:id",
+      "handler": "music-album.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_notes_notes",
+  "info": {
+    "name": "Note",
+    "icon": "comment-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "note": {
+      "type": "richtext"
+    }
+  }
+}

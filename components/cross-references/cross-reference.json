@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_cross_references_cross_references",
+  "info": {
+    "name": "Cross references",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cross_reference": {
+      "type": "string"
+    }
+  }
+}

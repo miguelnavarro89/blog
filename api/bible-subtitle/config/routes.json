@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bible-subtitles",
+      "handler": "bible-subtitle.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bible-subtitles/count",
+      "handler": "bible-subtitle.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bible-subtitles/:id",
+      "handler": "bible-subtitle.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bible-subtitles",
+      "handler": "bible-subtitle.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bible-subtitles/:id",
+      "handler": "bible-subtitle.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bible-subtitles/:id",
+      "handler": "bible-subtitle.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

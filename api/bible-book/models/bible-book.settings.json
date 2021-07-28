@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bible_books",
+  "info": {
+    "name": "Bible book",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "chapters": {
+      "type": "integer",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "bible_version": {
+      "via": "bible_books",
+      "model": "bible-version"
+    },
+    "abbreviation": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "long_name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "note": {
+      "type": "component",
+      "repeatable": true,
+      "component": "notes.note",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "bible_chapter_summary": {
+      "via": "bible_book",
+      "model": "bible-chapter-summary"
+    }
+  }
+}

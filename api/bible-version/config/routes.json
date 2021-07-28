@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bible-versions",
+      "handler": "bible-version.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bible-versions/count",
+      "handler": "bible-version.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bible-versions/:id",
+      "handler": "bible-version.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bible-versions",
+      "handler": "bible-version.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bible-versions/:id",
+      "handler": "bible-version.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bible-versions/:id",
+      "handler": "bible-version.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
