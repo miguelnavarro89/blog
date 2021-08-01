@@ -20,6 +20,16 @@
     "music_albums": {
       "via": "music_artist",
       "collection": "music-album"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

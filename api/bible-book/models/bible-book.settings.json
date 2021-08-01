@@ -30,7 +30,7 @@
       "required": true,
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       }
     },
@@ -76,6 +76,10 @@
     "bible_chapter_summary": {
       "via": "bible_book",
       "model": "bible-chapter-summary"
+    },
+    "bible_verses": {
+      "via": "bible_book",
+      "collection": "bible-verse"
     }
   }
 }

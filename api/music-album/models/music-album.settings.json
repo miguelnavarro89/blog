@@ -17,8 +17,22 @@
       "required": true
     },
     "music_artist": {
-      "model": "artist",
-      "via": "music_albums"
+      "via": "music_albums",
+      "model": "artist"
+    },
+    "music_lyrics": {
+      "via": "music_album",
+      "collection": "lyrics"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

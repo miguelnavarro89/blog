@@ -16,18 +16,18 @@
     }
   },
   "attributes": {
-    "content": {
-      "type": "richtext",
-      "required": true,
+    "bible_verse": {
+      "via": "bible_subtitle",
+      "model": "bible-verse"
+    },
+    "subtitle": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
-    },
-    "bible_verse": {
-      "via": "bible_subtitle",
-      "model": "bible-verse"
+      },
+      "type": "string",
+      "required": true
     }
   }
 }
