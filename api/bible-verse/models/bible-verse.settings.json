@@ -58,10 +58,6 @@
         }
       }
     },
-    "bible_book": {
-      "via": "bible_verses",
-      "model": "bible-book"
-    },
     "content": {
       "pluginOptions": {
         "i18n": {
@@ -70,6 +66,9 @@
       },
       "type": "text",
       "required": true
+    },
+    "bible_book": {
+      "model": "bible-book"
     }
   }
 }

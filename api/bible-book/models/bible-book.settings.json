@@ -34,10 +34,6 @@
         }
       }
     },
-    "bible_version": {
-      "via": "bible_books",
-      "model": "bible-version"
-    },
     "abbreviation": {
       "type": "string",
       "required": true,
@@ -77,9 +73,8 @@
       "via": "bible_book",
       "model": "bible-chapter-summary"
     },
-    "bible_verses": {
-      "via": "bible_book",
-      "collection": "bible-verse"
+    "bible_version": {
+      "model": "bible-version"
     }
   }
 }
