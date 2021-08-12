@@ -69,10 +69,6 @@
         }
       }
     },
-    "bible_chapter_summary": {
-      "via": "bible_book",
-      "model": "bible-chapter-summary"
-    },
     "bible_version": {
       "model": "bible-version"
     }
