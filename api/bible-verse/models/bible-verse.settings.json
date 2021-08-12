@@ -34,10 +34,6 @@
         }
       }
     },
-    "bible_subtitle": {
-      "via": "bible_verse",
-      "model": "bible-subtitle"
-    },
     "notes": {
       "type": "component",
       "repeatable": true,

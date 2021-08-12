@@ -16,10 +16,6 @@
     }
   },
   "attributes": {
-    "bible_verse": {
-      "via": "bible_subtitle",
-      "model": "bible-verse"
-    },
     "subtitle": {
       "pluginOptions": {
         "i18n": {
@@ -28,6 +24,27 @@
       },
       "type": "string",
       "required": true
+    },
+    "chapter": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer",
+      "required": true
+    },
+    "verse": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer",
+      "required": true
+    },
+    "bible_book": {
+      "model": "bible-book"
     }
   }
 }
