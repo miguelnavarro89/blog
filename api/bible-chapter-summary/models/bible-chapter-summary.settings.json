@@ -36,6 +36,9 @@
     },
     "bible_book": {
       "model": "bible-book"
+    },
+    "bible_version": {
+      "model": "bible-version"
     }
   }
 }

@@ -16,13 +16,13 @@
     }
   },
   "attributes": {
-    "subtitle": {
+    "content": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "chapter": {
@@ -45,6 +45,29 @@
     },
     "bible_book": {
       "model": "bible-book"
+    },
+    "notes": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "notes.note"
+    },
+    "refs": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "cross-references.cross-reference"
+    },
+    "bible_version": {
+      "model": "bible-version"
     }
   }
 }

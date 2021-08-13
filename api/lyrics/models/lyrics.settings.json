@@ -37,6 +37,9 @@
       },
       "type": "string",
       "required": true
+    },
+    "music_artist": {
+      "model": "artist"
     }
   }
 }
