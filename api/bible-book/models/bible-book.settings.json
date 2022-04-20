@@ -71,6 +71,14 @@
     },
     "bible_version": {
       "model": "bible-version"
+    },
+    "order": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer"
     }
   }
 }
