@@ -40,6 +40,14 @@
     },
     "music_artist": {
       "model": "artist"
+    },
+    "order": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "integer"
     }
   }
 }
